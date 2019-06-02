@@ -1,0 +1,32 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "transactions": {
+        "*": {
+          "id": "transactions[&1].id",
+          "this_account": {
+            "id": "transactions[&2].accountId"
+          },
+          "other_account": {
+            "number": "transactions[&2].counterpartyAccount",
+            "holder": {
+              "name": "transactions[&3].counterpartyName"
+            },
+            "metadata": {
+              "image_URL": "transactions[&3].counterParyLogoPath"
+            }
+          },
+          "details": {
+            "value": {
+              "amount": ["transactions[&3].instructedAmount", "transactions[&3].transactionAmount"],
+              "currency": ["transactions[&3].instructedCurrency", "transactions[&3].transactionCurrency"]
+            },
+            "type": "transactions[&2].transactionType",
+            "description": "transactions[&2].description"
+          }
+        }
+      }
+    }
+  }
+]
