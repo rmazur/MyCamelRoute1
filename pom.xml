@@ -13,7 +13,7 @@
         <category>Beginner</category>
         <title>Servlet Tomcat</title>
         <spring.version>5.1.6.RELEASE</spring.version>
-        <camel.version>2.23.2</camel.version>
+        <camel.version>2.24.0</camel.version>
         <logging.version>2.11.2</logging.version>
         <jetty.version>9.4.18.v20190429</jetty.version>
     </properties>
