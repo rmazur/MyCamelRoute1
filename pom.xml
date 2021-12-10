@@ -14,7 +14,7 @@
         <title>Servlet Tomcat</title>
         <spring.version>5.1.6.RELEASE</spring.version>
         <camel.version>2.24.0</camel.version>
-        <logging.version>2.11.2</logging.version>
+        <logging.version>2.15.0</logging.version>
         <jetty.version>9.4.18.v20190429</jetty.version>
     </properties>
 
